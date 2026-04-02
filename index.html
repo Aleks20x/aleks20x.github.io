@@ -2,34 +2,53 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aleks Dev - Games</title>
-    <style>
-        body { background: #0a0a0c; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
-        h1 { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 30px; }
-        .game-card { background: #1a1a1e; border: 2px solid #333; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; transition: 0.3s; cursor: pointer; text-decoration: none; color: white; }
-        .game-card:hover { border-color: #ffd700; transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
-        .game-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; display: block; }
-        .game-desc { font-size: 0.9rem; color: #aaa; }
-        .neon-text { color: #ffd700; }
-    </style>
-</head>
-<body>
-    <h1>🕹️ MEUS JOGOS NEON</h1>
-    <p>Clique para jogar direto no seu celular!</p>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Aleks Dev - Games</title>
+                <style>
+                        body { background: #0a0a0c; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
+                                h1 { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 10px; }
+                                        p { color: #aaa; margin-bottom: 30px; }
+                                                .game-container { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
+                                                        
+                                                                .game-card { background: #1a1a1e; border: 2px solid #333; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; transition: 0.3s; cursor: pointer; text-decoration: none; color: white; display: block; }
+                                                                        .game-card:hover { border-color: #ffd700; transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+                                                                                
+                                                                                        .coming-soon { background: #121214; border: 2px dashed #444; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; opacity: 0.6; cursor: default; }
+                                                                                                
+                                                                                                        .game-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; display: block; }
+                                                                                                                .game-desc { font-size: 0.9rem; color: #888; }
+                                                                                                                        .neon-text { color: #ffd700; text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+                                                                                                                            </style>
+                                                                                                                            </head>
+                                                                                                                            <body>
+                                                                                                                                <h1>🕹️ MEUS JOGOS NEON</h1>
+                                                                                                                                    <p>Toque para jogar direto no seu celular!</p>
 
-    <a href="https://aleks20x.github.io/zero-g-2048./" class="game-card">
-        <span class="game-title neon-text">Zero-G 2048</span>
-        <span class="game-desc">A versão ultra do clássico com gravidade zero e efeitos especiais.</span>
-    </a>
+                                                                                                                                        <div class="game-container">
+                                                                                                                                                <a href="https://aleks20x.github.io/zero-g-2048./" class="game-card">
+                                                                                                                                                            <span class="game-title neon-text">Zero-G 2048</span>
+                                                                                                                                                                        <span class="game-desc">A versão ultra do clássico com gravidade zero e efeitos especiais.</span>
+                                                                                                                                                                                </a>
 
-    <a href="https://aleks20x.github.io/organism/" class="game-card">
-        <span class="game-title" style="color: #00ffcc;">Organism Sim</span>
-        <span class="game-desc">Simulação de vida e pulsos de luz. Interconecte as células.</span>
-    </a>
+                                                                                                                                                                                        <div class="coming-soon">
+                                                                                                                                                                                                    <span class="game-title" style="color: #666;">Em Breve</span>
+                                                                                                                                                                                                                <span class="game-desc">Novo lançamento sendo calibrado... 🎲</span>
+                                                                                                                                                                                                                        </div>
 
-    <footer>
-        <p style="margin-top: 50px; font-size: 0.8rem; color: #555;">Desenvolvido por Aleks20x</p>
-    </footer>
-</body>
-</html>
+                                                                                                                                                                                                                                <div class="coming-soon">
+                                                                                                                                                                                                                                            <span class="game-title" style="color: #666;">Em Breve</span>
+                                                                                                                                                                                                                                                        <span class="game-desc">Aguarde as próximas novidades.</span>
+                                                                                                                                                                                                                                                                </div>
+
+                                                                                                                                                                                                                                                                        <div class="coming-soon">
+                                                                                                                                                                                                                                                                                    <span class="game-title" style="color: #666;">Em Breve</span>
+                                                                                                                                                                                                                                                                                                <span class="game-desc">Desenvolvimento em progresso.</span>
+                                                                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                                                                            </div>
+
+                                                                                                                                                                                                                                                                                                                <footer>
+                                                                                                                                                                                                                                                                                                                        <p style="margin-top: 50px; font-size: 0.8rem; color: #444;">Desenvolvido por Aleks20x</p>
+                                                                                                                                                                                                                                                                                                                            </footer>
+                                                                                                                                                                                                                                                                                                                            </body>
+                                                                                                                                                                                                                                                                                                                            </html>
+                                                                                                                                                                                                                                                                                                                            
