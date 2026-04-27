@@ -5,9 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Aleks20x Dev - Games</title>
                 <style>
-                        body { background: #0a0a0c; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
-                                h1 { color: #00ffcc; text-shadow: 0 0 10px #00ffcc; margin-bottom: 10px; }
-                                        p { color: #aaa; margin-bottom: 30px; }
+                        /* Mantenha o body como está */
+body { 
+    background: #0a0a0c; 
+    color: white; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 20px; 
+}
+
+/* ATUALIZE o h1 para isso */
+h1 { 
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    animation: rgbLoop 8s linear infinite; /* Chamada da animação */
+}
+
+/* MANTENHA o p exatamente assim */
+p { 
+    color: #aaa; 
+    margin-bottom: 30px; 
+}
+
+/* ADICIONE os Keyframes no final do seu style */
+@keyframes rgbLoop {
+    0% { color: #ff0000; text-shadow: 0 0 15px #ff0000; }
+    33% { color: #00ff00; text-shadow: 0 0 15px #00ff00; }
+    66% { color: #0000ff; text-shadow: 0 0 15px #0000ff; }
+    100% { color: #ff0000; text-shadow: 0 0 15px #ff0000; }
+}
+
                                                 .game-container { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
                                                         
                                                                 .game-card { background: #1a1a1e; border: 2px solid #333; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; transition: 0.3s; cursor: pointer; text-decoration: none; color: white; display: block; }
