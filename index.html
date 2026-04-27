@@ -2,101 +2,91 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Aleks20x Dev - Games</title>
-                <style>
-                        /* Mantenha o body como está */
-body { 
-    background: #0a0a0c; 
-    color: white; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    text-align: center; 
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    min-height: 100vh; 
-    margin: 0; 
-    padding: 20px; 
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleks20x Dev - Games</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { 
+            background: #0a0a0c; 
+            color: white; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            text-align: center; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0; 
+            padding: 20px; 
+        }
 
-/* ATUALIZE o h1 para isso */
-h1 { 
-    margin-bottom: 10px;
-    font-size: 2.5rem;
-    font-weight: bold;
-    animation: rgbLoop 8s linear infinite; /* Chamada da animação */
-}
+        /* ANIMAÇÃO RGB */
+        @keyframes rgbLoop {
+            0% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+            33% { color: #00ff00; text-shadow: 0 0 20px #00ff00; }
+            66% { color: #0000ff; text-shadow: 0 0 20px #0000ff; }
+            100% { color: #ff0000; text-shadow: 0 0 20px #ff0000; }
+        }
 
-/* MANTENHA o p exatamente assim */
-p { 
-    color: #aaa; 
-    margin-bottom: 30px; 
-}
+        .rgb-text {
+            animation: rgbLoop 8s linear infinite;
+        }
 
-/* ADICIONE os Keyframes no final do seu style */
-@keyframes rgbLoop {
-    0% { color: #ff0000; text-shadow: 0 0 15px #ff0000; }
-    33% { color: #00ff00; text-shadow: 0 0 15px #00ff00; }
-    66% { color: #0000ff; text-shadow: 0 0 15px #0000ff; }
-    100% { color: #ff0000; text-shadow: 0 0 15px #ff0000; }
-}
+        .game-container { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
+        .game-card { background: #1a1a1e; border: 2px solid #333; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; transition: 0.3s; cursor: pointer; text-decoration: none; color: white; display: block; }
+        .game-card:hover { border-color: #ffd700; transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
+        .coming-soon { background: #121214; border: 2px dashed #444; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; opacity: 0.6; cursor: default; }
+        .game-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; display: block; }
+        .game-desc { font-size: 0.9rem; color: #888; }
+        .neon-text { color: #00ff00; text-shadow: 0 0 5px rgba(0, 255, 0, 0.5); }
+        p { color: #aaa; margin-bottom: 30px; }
+    </style>
+</head>
+<body>
 
-                                                .game-container { display: flex; flex-wrap: wrap; justify-content: center; max-width: 1000px; }
-                                                        
-                                                                .game-card { background: #1a1a1e; border: 2px solid #333; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; transition: 0.3s; cursor: pointer; text-decoration: none; color: white; display: block; }
-                                                                        .game-card:hover { border-color: #ffd700; transform: scale(1.05); box-shadow: 0 0 15px rgba(255, 215, 0, 0.3); }
-                                                                                
-                                                                                        .coming-soon { background: #121214; border: 2px dashed #444; border-radius: 15px; padding: 20px; margin: 15px; width: 280px; opacity: 0.6; cursor: default; }
-                                                                                                
-                                                                                                        .game-title { font-size: 1.5rem; font-weight: bold; margin-bottom: 10px; display: block; }
-                                                                                                                .game-desc { font-size: 0.9rem; color: #888; }
-                                                                                                                        .neon-text { color: #00ff00; text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
-                                                                                                                            </style>
-                                                                                                                            </head>
-                                                                                                                            <body>
-                                                                                                                                <h1>🎮 Aleks20x desenvolvedor indie</h1>
-                                                                                                                                    <p>Toque para jogar direto no seu navegador!</p>
-                                                                                                                                
-<div class="game-container">
+    <h1 style="display: flex; flex-direction: column; align-items: center; line-height: 0.7; margin-bottom: 50px; font-family: 'Orbitron', sans-serif;">
+        <span class="rgb-text" style="font-size: 80px; font-style: italic; font-weight: bold;">
+            Aleks20x
+        </span>
+        <span class="rgb-text" style="font-size: 40px; font-style: italic; letter-spacing: 10px; margin-top: -10px; filter: brightness(0.8);">
+            DEV GAMES
+        </span>
+    </h1>
 
-    <a href="https://aleks20x.github.io/oito-8-cards/" class="game-card"
-style="border-color: #00ff00;">
-        <span class="game-title neon-text">🃏 Oito 8 Cards</span>
-        <span class="game-desc">A carta com maior valor vence o turno, o deck contém 88 cartas, use estratégia para vencer.</span>
-    </a>
-  
-    <a href="https://aleks20x.github.io/fabrica-de-pocoes/" class="game-card" style="border-color: #ff0044;">
-        <span class="game-title" style="color: #ff0044; text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);">🧪 Fábrica de Poções 🐈‍⬛</span>
-        <span class="game-desc">Adicione os ingredientes na ordem correta para criar poções mágicas para seus clientes inusitados! Jogo simples para crianças e adultos estimula o raciocínio e a atenção. </span>
-    </a>
+    <p>Toque para jogar direto no seu navegador!</p>
 
-    <a href="https://aleks20x.github.io/zero-g-2048./" class="game-card" style="border-color: #ff0044;">
-        <span class="game-title" style="color: #ff0044; text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);">Zero-G 2048 🔴🟢🔵</span>
-        <span class="game-desc">Uma versão do clássico 2048 em um ambiente com gravidade zero e efeitos especiais, jogo simples e intuitivo para qualquer idade.</span>
-    </a>
+    <div class="game-container">
+        <a href="https://aleks20x.github.io/oito-8-cards/" class="game-card" style="border-color: #00ff00;">
+            <span class="game-title neon-text">🃏 Oito 8 Cards</span>
+            <span class="game-desc">A carta com maior valor vence o turno, o deck contém 88 cartas, use estratégia para vencer.</span>
+        </a>
+      
+        <a href="https://aleks20x.github.io/fabrica-de-pocoes/" class="game-card" style="border-color: #ff0044;">
+            <span class="game-title" style="color: #ff0044; text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);">🧪 Fábrica de Poções 🐈‍⬛</span>
+            <span class="game-desc">Adicione os ingredientes na ordem correta para criar poções mágicas! Jogo simples para crianças e adultos.</span>
+        </a>
 
-    <a href="https://aleks20x.github.io/void-relics/" class="game-card" style="border-color: #ff0044;">
-        <span class="game-title" style="color: #ff0044; text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);">🎲 VOID RELICS 🎲</span>
-        <span class="game-desc">Duelos espaciais com física de dados e artefatos de poder.</span>
-        <div style="margin-top: 10px; font-size: 8px; color: #aaa; letter-spacing: 1px;">Leia o manual localizadono Menu do jogo, é um RPG difícil. </div>
-    </a>
+        <a href="https://aleks20x.github.io/zero-g-2048./" class="game-card" style="border-color: #ff0044;">
+            <span class="game-title" style="color: #ff0044; text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);">Zero-G 2048 🔴🟢🔵</span>
+            <span class="game-desc">Clássico 2048 em ambiente com gravidade zero e efeitos especiais.</span>
+        </a>
 
-    <div class="coming-soon">
-        <span class="game-title" style="color: #666;">Em Breve</span>
-        <span class="game-desc">Aguarde as próximas novidades.</span>
+        <a href="https://aleks20x.github.io/void-relics/" class="game-card" style="border-color: #ff0044;">
+            <span class="game-title" style="color: #ff0044; text-shadow: 0 0 10px rgba(255, 0, 68, 0.5);">🎲 VOID RELICS 🎲</span>
+            <span class="game-desc">Duelos espaciais com física de dados e artefatos de poder.</span>
+        </a>
+
+        <div class="coming-soon">
+            <span class="game-title" style="color: #666;">Em Breve</span>
+            <span class="game-desc">Aguarde as próximas novidades.</span>
+        </div>
     </div>
 
-    <div class="coming-soon">
-        <span class="game-title" style="color: #666;">Em Breve</span>
-        <span class="game-desc">Desenvolvimento em progresso.</span>
-    </div>
+    <footer>
+        <p style="margin-top: 50px; font-size: 0.8rem; color: #444;">Desenvolvido por Aleks20x</p>
+    </footer>
 
-</div>
-
-<footer>
-    <p style="margin-top: 50px; font-size: 0.8rem; color: #444;">Desenvolvido por Aleks20x</p>
-</footer>
-                                                                                                                                                                                                                                                                                                                            </body>
-                                                                                                                                                                                                                                                                                                                            </html>
-                                                                                                                                                                                                                                                                                                                            
+</body>
+</html>
+                                                                                                                                                                                                                                                                            
